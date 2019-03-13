@@ -6,7 +6,6 @@ import java.util.List;
 public class Offer {
 
     private List<OfferItem> availableItems = new ArrayList<>();
-
     private List<OfferItem> unavailableItems = new ArrayList<>();
 
     public Offer(List<OfferItem> availabeItems, List<OfferItem> unavailableItems) {
