@@ -8,14 +8,14 @@ public class Discount {
 
     private String discountCause;
 
-    public String getDiscountCause() {
-        return discountCause;
-    }
-
     public Discount(Money money, String discountCause, BigDecimal discount) {
         super();
         this.money = money;
         this.discountCause = discountCause;
+    }
+
+    public String getDiscountCause() {
+        return discountCause;
     }
 
     public Money getMoney() {

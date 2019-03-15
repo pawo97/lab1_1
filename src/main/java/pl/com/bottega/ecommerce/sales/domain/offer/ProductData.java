@@ -14,6 +14,15 @@ public class ProductData {
 
     private String productType;
 
+    public ProductData(Money money, String productId, String productName, Date productSnapshotDate, String productType) {
+        super();
+        this.money = money;
+        this.productId = productId;
+        this.productName = productName;
+        this.productSnapshotDate = productSnapshotDate;
+        this.productType = productType;
+    }
+
     public Money getMoney() {
         return money;
     }
@@ -32,15 +41,6 @@ public class ProductData {
 
     public String getProductType() {
         return productType;
-    }
-
-    public ProductData(Money money, String productId, String productName, Date productSnapshotDate, String productType) {
-        super();
-        this.money = money;
-        this.productId = productId;
-        this.productName = productName;
-        this.productSnapshotDate = productSnapshotDate;
-        this.productType = productType;
     }
 
 }
